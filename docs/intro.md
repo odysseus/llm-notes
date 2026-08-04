@@ -1,5 +1,5 @@
 ---
-title: AI Research Library
+title: LLM Notes
 slug: /
 sidebar_position: 1
 type: index
@@ -7,7 +7,7 @@ status: active
 updated: 2026-07-30
 ---
 
-# AI Research Library
+# LLM Notes
 
 This is a selective research library about large language models and LLM application architecture. It is not intended to teach every prerequisite or preserve every detail from prior research. The goal is to build a compact set of articles that make the important ideas understandable, show how they appear in code, and clarify the engineering decisions they create.
 

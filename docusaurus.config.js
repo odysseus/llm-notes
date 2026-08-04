@@ -1,14 +1,14 @@
 const remarkMath = require('remark-math').default;
 const rehypeKatex = require('rehype-katex').default;
 
-const repository = process.env.GITHUB_REPOSITORY || 'your-github-username/ai-research-library';
+const repository = process.env.GITHUB_REPOSITORY || 'odysseus/llm-notes';
 const [organizationName, projectName] = repository.split('/');
 const isUserSite = projectName.toLowerCase() === `${organizationName.toLowerCase()}.github.io`;
 const baseUrl = process.env.DOCUSAURUS_BASE_URL || (isUserSite ? '/' : `/${projectName}/`);
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'AI Research Library',
+  title: 'LLM Notes',
   tagline: 'Concepts, papers, and practical architecture for building with language models',
   favicon: 'img/favicon.svg',
   url: `https://${organizationName}.github.io`,
@@ -57,7 +57,7 @@ const config = {
   themeConfig: {
     colorMode: {defaultMode: 'light', respectPrefersColorScheme: true},
     navbar: {
-      title: 'AI Research Library',
+      title: 'LLM Notes',
       items: [
         {type: 'docSidebar', sidebarId: 'researchSidebar', position: 'left', label: 'Library'},
         {
@@ -74,7 +74,7 @@ const config = {
     },
     footer: {
       style: 'dark',
-      copyright: 'AI Research Library · Built with Docusaurus',
+      copyright: 'LLM Notes · Built with Docusaurus',
     },
     docs: {sidebar: {hideable: true, autoCollapseCategories: false}},
     prism: {additionalLanguages: ['bash', 'json', 'rust']},
