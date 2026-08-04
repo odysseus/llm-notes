@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Libre+Franklin:wght@400;500;600&family=Literata:opsz,wght@7..72,400;7..72,600;7..72,700&display=swap');
+@import url('https://cdn.jsdelivr.net/npm/katex@0.16.22/dist/katex.min.css');
+
+:root {
+  --ifm-color-primary: #80533c;
+  --ifm-color-primary-dark: #704733;
+  --ifm-color-primary-darker: #67412f;
+  --ifm-color-primary-darkest: #563527;
+  --ifm-color-primary-light: #936149;
+  --ifm-color-primary-lighter: #9e6b52;
+  --ifm-color-primary-lightest: #b3826b;
+  --ifm-background-color: #f4efe4;
+  --ifm-background-surface-color: #fbf7ee;
+  --ifm-navbar-background-color: rgba(244, 239, 228, 0.94);
+  --ifm-footer-background-color: #292724;
+  --ifm-font-family-base: 'Libre Franklin', system-ui, sans-serif;
+  --ifm-heading-font-family: 'Literata', Georgia, serif;
+  --ifm-font-family-monospace: 'IBM Plex Mono', monospace;
+  --ifm-line-height-base: 1.75;
+  --ifm-code-font-size: 92%;
+  --ifm-global-radius: 4px;
+  --ifm-toc-border-color: #d8cfbf;
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #78dce8;
+  --ifm-color-primary-dark: #55d3e1;
+  --ifm-color-primary-darker: #43cfdf;
+  --ifm-color-primary-darkest: #24b5c4;
+  --ifm-color-primary-light: #9be5ef;
+  --ifm-color-primary-lighter: #ade9f1;
+  --ifm-color-primary-lightest: #e1f8fa;
+  --ifm-background-color: #14181b;
+  --ifm-background-surface-color: #1b2125;
+  --ifm-navbar-background-color: rgba(20, 24, 27, 0.95);
+  --ifm-footer-background-color: #0d1012;
+  --ifm-toc-border-color: #323c42;
+}
+
+html {scroll-behavior: smooth;}
+
+.navbar {
+  border-bottom: 1px solid var(--ifm-toc-border-color);
+  box-shadow: none;
+  backdrop-filter: blur(12px);
+}
+
+.navbar__title,
+.theme-doc-markdown h1,
+.theme-doc-markdown h2,
+.theme-doc-markdown h3 {
+  font-family: var(--ifm-heading-font-family);
+  letter-spacing: -0.025em;
+}
+
+.theme-doc-markdown {
+  font-size: 1.04rem;
+  max-width: 820px;
+}
+
+.theme-doc-markdown > h1:first-child {
+  font-size: clamp(2.25rem, 5vw, 4rem);
+  line-height: 1.05;
+  margin-bottom: 1.2rem;
+}
+
+.theme-doc-markdown h2 {
+  border-top: 1px solid var(--ifm-toc-border-color);
+  padding-top: 2rem;
+  margin-top: 3.25rem;
+}
+
+.theme-doc-markdown blockquote {
+  background: var(--ifm-background-surface-color);
+  border-left: 3px solid var(--ifm-color-primary);
+  box-shadow: 0 8px 30px rgba(54, 41, 30, 0.05);
+  padding: 1rem 1.35rem;
+}
+
+.theme-doc-sidebar-container {
+  border-right-color: var(--ifm-toc-border-color) !important;
+}
+
+code, pre {border-radius: 3px;}
+table {display: table; width: 100%;}
+
+@media (max-width: 996px) {
+  .theme-doc-markdown {font-size: 1rem;}
+}

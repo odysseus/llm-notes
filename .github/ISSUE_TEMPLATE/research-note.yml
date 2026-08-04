@@ -1,0 +1,34 @@
+name: Research note
+description: Suggest an update or ask for clarification about an article.
+title: "Research note: "
+labels: [research-note]
+body:
+  - type: dropdown
+    id: note_type
+    attributes:
+      label: Note type
+      options:
+        - Suggest an update
+        - Ask for clarification
+        - Report an error
+    validations:
+      required: true
+  - type: input
+    id: article
+    attributes:
+      label: Article
+      description: Paste the article title or URL.
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Section
+      description: Which heading or passage does this concern?
+  - type: textarea
+    id: note
+    attributes:
+      label: Suggestion or question
+      description: Describe what should change or what needs clarification.
+    validations:
+      required: true
