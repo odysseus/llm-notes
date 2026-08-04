@@ -7,6 +7,7 @@ module.exports = {
       label: 'Concepts and Architecture',
       collapsed: false,
       items: [
+        'word-vectors-word2vec-glove',
         'llm-request-lifecycle',
         'context-engineering',
         'retrieval-augmented-generation',
