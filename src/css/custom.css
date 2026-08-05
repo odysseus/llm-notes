@@ -87,3 +87,100 @@ table {display: table; width: 100%;}
 @media (max-width: 996px) {
   .theme-doc-markdown {font-size: 1rem;}
 }
+
+.tablet-pane-toggle {
+  display: none;
+}
+
+/*
+ * Docusaurus switches to its desktop docs layout at 997px. Large tablets can
+ * cross that threshold in portrait, where two navigation panes leave too
+ * little room for the article. Keep the panes orientation-aware across the
+ * range of current iPad viewport sizes.
+ */
+@media (min-width: 768px) and (max-width: 1366px) and (orientation: portrait) {
+  .theme-doc-sidebar-container,
+  .theme-doc-sidebar-container + main .row > .col:has(.theme-doc-toc-desktop) {
+    display: none;
+  }
+
+  .theme-doc-sidebar-container + main [class*='docItemCol_'] {
+    max-width: 100% !important;
+  }
+
+  .theme-doc-sidebar-container + main {
+    padding-top: 3.5rem;
+  }
+
+  .tablet-pane-toggle {
+    align-items: center;
+    background: var(--ifm-background-surface-color);
+    border: 1px solid var(--ifm-toc-border-color);
+    border-radius: var(--ifm-global-radius);
+    color: var(--ifm-font-color-base);
+    cursor: pointer;
+    display: flex;
+    font: 500 0.82rem/1 var(--ifm-font-family-base);
+    gap: 0.4rem;
+    padding: 0.65rem 0.75rem;
+    position: fixed;
+    top: calc(var(--ifm-navbar-height) + 0.75rem);
+    z-index: 210;
+  }
+
+  .tablet-pane-toggle--left {
+    left: 0.75rem;
+  }
+
+  .tablet-pane-toggle--right {
+    right: 0.75rem;
+  }
+
+  .tablet-pane-toggle[aria-expanded='true'] {
+    border-color: var(--ifm-color-primary);
+    color: var(--ifm-color-primary);
+  }
+
+  .tablet-left-pane-open .theme-doc-sidebar-container {
+    background: var(--ifm-background-surface-color);
+    bottom: 0;
+    display: block;
+    left: 0;
+    margin-top: 0;
+    overflow-y: auto;
+    padding-top: 3.75rem;
+    position: fixed;
+    top: var(--ifm-navbar-height);
+    width: min(300px, 85vw);
+    z-index: 200;
+  }
+
+  .tablet-right-pane-open
+    .theme-doc-sidebar-container
+    + main
+    .row
+    > .col:has(.theme-doc-toc-desktop) {
+    background: var(--ifm-background-surface-color);
+    bottom: 0;
+    display: block;
+    max-width: min(300px, 85vw);
+    overflow-y: auto;
+    padding: 4.5rem 1.25rem 1.25rem;
+    position: fixed;
+    right: 0;
+    top: var(--ifm-navbar-height);
+    width: min(300px, 85vw);
+    z-index: 200;
+  }
+
+  .tablet-right-pane-open .theme-doc-toc-desktop {
+    display: block;
+  }
+}
+
+@media (min-width: 997px) and (max-width: 1366px) and (orientation: landscape) {
+  .theme-doc-sidebar-container,
+  .theme-doc-toc-desktop {
+    display: block;
+  }
+}

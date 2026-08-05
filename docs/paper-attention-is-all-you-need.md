@@ -1,5 +1,5 @@
 ---
-title: "Paper Guide: Attention Is All You Need"
+title: "Attention Is All You Need"
 type: paper-guide
 status: pilot
 updated: 2026-07-30

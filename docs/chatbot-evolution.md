@@ -1,12 +1,12 @@
 ---
-title: Chatbot Evolution
+title: "The Evolution of Chatbots"
 type: concept-history
 status: active
 updated: 2026-08-04
 tags: [chatbots, prompting, fine-tuning, instruction-tuning, question-answering, foundational-papers]
 ---
 
-# Chatbot Evolution
+# From Translation to Conversation: The Evolution of Chatbots
 
 The modern general-purpose chatbot did not originate in one paper. It appeared when several research lines converged:
 

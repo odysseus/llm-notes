@@ -92,7 +92,8 @@ For exact application state, structured data is usually preferable:
 For qualitative preference, concise prose may be better:
 
 ```text
-User preference: prioritize long-term serviceability over novelty in watch recommendations.
+User preference: prioritize long-term serviceability over novelty
+in watch recommendations.
 Source: explicit user statement.
 ```
 
@@ -300,4 +301,3 @@ Case(
 - Liu et al. (2024), [*Lost in the Middle: How Language Models Use Long Contexts*](https://aclanthology.org/2024.tacl-1.9/).
 - Dong et al. (2022/2024), [*A Survey on In-context Learning*](https://arxiv.org/abs/2301.00234).
 - Lewis et al. (2020), [*Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks*](https://proceedings.neurips.cc/paper/2020/hash/6b493230205f780e1bc26945df7481e5-Abstract.html).
-

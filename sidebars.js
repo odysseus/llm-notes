@@ -7,19 +7,28 @@ module.exports = {
       label: 'Concepts and Architecture',
       collapsed: false,
       items: [
-        'word-vectors-word2vec-glove',
-        'llm-request-lifecycle',
-        'context-engineering',
+        'word-vectors',
         'retrieval-augmented-generation',
       ],
     },
     {
       type: 'category',
-      label: 'Papers and History',
+      label: 'Architecture',
+      collapsed: false,
+      items: [
+        'chatbot-evolution',
+        'llm-request-lifecycle',
+        'context-engineering',
+        'harness-engineering',
+        'multi-agent-systems',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Influential Papers',
       collapsed: false,
       items: [
         'paper-attention-is-all-you-need',
-        'chatbot-evolution',
       ],
     },
   ],

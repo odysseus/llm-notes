@@ -41,7 +41,7 @@ A simplified request might look like:
     },
     {
       "role": "developer",
-      "content": "Never invent dates. Ask when a missing date changes the requested action."
+      "content": "Never invent dates; ask if a missing date matters."
     },
     {
       "role": "user",
@@ -82,7 +82,11 @@ This matters because “combining” does not normally mean concatenating everyt
 The model then conditions its next-token probabilities on that entire context. Informally:
 
 $$
-P(\text{next token} \mid \text{instructions, messages, evidence, tools, tokens already generated})
+\begin{aligned}
+P(&\text{next token} \mid
+   \text{instructions, messages, evidence, tools,} \\
+  &\text{tokens already generated})
+\end{aligned}
 $$
 
 The Transformer architecture made it practical for token representations to attend to other relevant positions in the input, while causal masking prevents a decoder from seeing future output tokens during generation ([Vaswani et al., 2017](https://arxiv.org/abs/1706.03762)).
@@ -280,4 +284,3 @@ The model is used where language interpretation is valuable. Deterministic code 
 - Yao et al. (2022), [*ReAct: Synergizing Reasoning and Acting in Language Models*](https://arxiv.org/abs/2210.03629).
 - Schick et al. (2023), [*Toolformer: Language Models Can Teach Themselves to Use Tools*](https://arxiv.org/abs/2302.04761).
 - Liu et al. (2024), [*Lost in the Middle: How Language Models Use Long Contexts*](https://aclanthology.org/2024.tacl-1.9/).
-
