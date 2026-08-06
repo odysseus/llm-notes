@@ -21,6 +21,7 @@ module.exports = {
         'context-engineering',
         'harness-engineering',
         'multi-agent-systems',
+        'tool-use',
       ],
     },
     {

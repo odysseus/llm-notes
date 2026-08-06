@@ -1,5 +1,5 @@
 ---
-title: "Multi-Agent Systems: When Multiple LLM Agents Help"
+title: "Multi-Agent Systems"
 type: concept
 status: active
 updated: 2026-08-05

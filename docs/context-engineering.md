@@ -13,15 +13,17 @@ Context engineering is the design of the information environment in which a mode
 A prompt is part of that environment, but not the whole of it. A useful approximation is:
 
 $$
-\text{context} =
-\text{instructions}
-+ \text{current request}
-+ \text{conversation state}
-+ \text{retrieved evidence}
-+ \text{application state}
-+ \text{tool descriptions}
-+ \text{examples}
-+ \text{output constraints}
+\begin{align*}
+\text{context} &= \\
+&\text{  instructions} \\ 
+&+ \text{current request} \\ 
+&+ \text{conversation state} \\ 
+&+ \text{retrieved evidence} \\ 
+&+ \text{application state} \\ 
+&+ \text{tool descriptions} \\ 
+&+ \text{examples} \\ 
+&+ \text{output constraints} \\ 
+\end{align*}
 $$
 
 The aim is not to fill the context window. It is to construct the smallest working set that gives the model the right evidence, priorities, and capabilities for the current task.

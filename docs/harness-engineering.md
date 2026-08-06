@@ -1,5 +1,5 @@
 ---
-title: "Harness Engineering: Building the System Around an LLM"
+title: "Harness Engineering"
 type: concept
 status: active
 updated: 2026-08-05
