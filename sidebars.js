@@ -18,10 +18,12 @@ module.exports = {
       items: [
         'chatbot-evolution',
         'llm-request-lifecycle',
+        'instruction-tuning',
         'context-engineering',
-        'harness-engineering',
-        'multi-agent-systems',
+        'llms-as-state-machines',
         'tool-use',
+        'multi-agent-systems',
+        'harness-engineering',
       ],
     },
     {
@@ -30,6 +32,7 @@ module.exports = {
       collapsed: false,
       items: [
         'paper-attention-is-all-you-need',
+        'paper-toolformer',
       ],
     },
   ],

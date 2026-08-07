@@ -1,5 +1,5 @@
 ---
-title: "Word Vectors"
+title: Word Vectors
 type: concept
 status: active
 updated: 2026-08-05
@@ -106,7 +106,7 @@ The dot product $u \cdot v$ is also important because many embedding objectives 
 
 An embedding can be explored through nearest neighbors. The neighbors of *violin* may include other instruments, while the neighbors of *walked* may reflect both meaning and past-tense grammar. The exact results depend on the corpus and training choices.
 
-The celebrated analogy pattern uses vector offsets:
+One pattern discovered in trained word vectors was mathematical analogies such as:
 
 $$
 v_{\text{king}} - v_{\text{man}} + v_{\text{woman}}
@@ -115,7 +115,7 @@ $$
 
 The important idea is not that the model performs symbolic algebra over dictionary definitions. Repeated relationships in the corpus can produce approximately parallel geometric differences. Mikolov, Yih, and Zweig showed that continuous word spaces could capture several syntactic and semantic regularities ([Mikolov et al., 2013](https://aclanthology.org/N13-1090/)).
 
-Analogies are useful demonstrations, but they should not be treated as universal laws of embedding geometry. Results are sensitive to the search rule, vocabulary, corpus, frequency, and preprocessing. Many relationships do not form one clean direction, and impressive selected examples can overstate average reliability.
+Analogies are useful demonstrations, but they should not be treated as universal laws of embedding geometry. Results are sensitive to the search rule, vocabulary, corpus, frequency, and preprocessing. Many relationships do not form one clean direction, and impressive selected examples can overstate average reliability. While these examples are impressive, many relationships do not hold in the same way. The results are selected to be impressive, making them a curiosity rather than broadly useful. 
 
 ## Word2Vec
 
