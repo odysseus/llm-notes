@@ -8,7 +8,11 @@ module.exports = {
       collapsed: false,
       items: [
         'word-vectors',
+        'chatbot-evolution',
+        'llm-request-lifecycle',
+        'prompt-engineering',
         'retrieval-augmented-generation',
+        'llm-security',
       ],
     },
     {
@@ -16,14 +20,12 @@ module.exports = {
       label: 'Architecture',
       collapsed: false,
       items: [
-        'chatbot-evolution',
-        'llm-request-lifecycle',
         'instruction-tuning',
         'context-engineering',
-        'llms-as-state-machines',
         'tool-use',
         'multi-agent-systems',
         'harness-engineering',
+        'llms-as-state-machines',
       ],
     },
     {
@@ -33,6 +35,7 @@ module.exports = {
       items: [
         'paper-attention-is-all-you-need',
         'paper-toolformer',
+        'paper-react',
       ],
     },
   ],

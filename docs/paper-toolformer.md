@@ -1,5 +1,5 @@
 ---
-title: "Paper Guide: Toolformer"
+title: "Toolformer"
 type: paper-guide
 status: active
 updated: 2026-08-07
