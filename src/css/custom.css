@@ -84,6 +84,44 @@ html {scroll-behavior: smooth;}
 code, pre {border-radius: 3px;}
 table {display: table; width: 100%;}
 
+.theme-back-to-top-button {
+  align-items: center;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-toc-border-color);
+  border-radius: 999px;
+  bottom: 1.25rem;
+  box-shadow: 0 6px 20px rgba(41, 39, 36, 0.18);
+  color: var(--ifm-font-color-base);
+  display: flex;
+  font: 600 0.85rem/1 var(--ifm-font-family-base);
+  gap: 0.4rem;
+  height: 2.75rem;
+  padding: 0 1rem;
+  right: 1.25rem;
+  width: auto;
+}
+
+.theme-back-to-top-button::before {
+  content: '↑';
+  font-size: 1.15rem;
+}
+
+.theme-back-to-top-button::after {
+  background: none;
+  content: 'Top';
+  height: auto;
+  mask: none;
+  width: auto;
+}
+
+@media (hover: hover) {
+  .theme-back-to-top-button:hover {
+    background: var(--ifm-color-emphasis-200);
+    border-color: var(--ifm-color-primary);
+    color: var(--ifm-color-primary);
+  }
+}
+
 @media (max-width: 996px) {
   .theme-doc-markdown {font-size: 1rem;}
 }
@@ -153,6 +191,10 @@ table {display: table; width: 100%;}
     top: var(--ifm-navbar-height);
     width: min(300px, 85vw);
     z-index: 200;
+  }
+
+  .tablet-left-pane-open .theme-doc-sidebar-container .menu {
+    padding: 0.75rem;
   }
 
   .tablet-right-pane-open

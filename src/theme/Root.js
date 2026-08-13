@@ -45,11 +45,11 @@ export default function Root({children}) {
       <button
         type="button"
         className="tablet-pane-toggle tablet-pane-toggle--left"
-        aria-label="Toggle section navigation"
+        aria-label="Toggle entries navigation"
         aria-expanded={openPane === 'left'}
         onClick={() => togglePane('left')}>
         <span aria-hidden="true">☰</span>
-        <span>Sections</span>
+        <span>Entries</span>
       </button>
       <button
         type="button"
