@@ -1,5 +1,5 @@
 ---
-title: "Paper Guide: ReAct"
+title: "ReAct"
 type: paper-guide
 status: active
 updated: 2026-08-08
